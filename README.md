@@ -33,3 +33,5 @@
 
 ## Using in VS Code
 
+https://github.com/0aveRyan/yellow-brick-road
+https://github.com/youknowriad/wp-js-plugin-starter
