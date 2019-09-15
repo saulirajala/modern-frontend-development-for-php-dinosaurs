@@ -44,8 +44,8 @@ if (true) {
 }
 console.log(varName);
 // console.log(letName); // Uncaught ReferenceError: letName is not defined
-// const constName;
 // console.log(constName); // Real error, no more undefined 🎉
+// const constName;
 
 // let, if value change. const, if not
 // Tip: always const, let if needed

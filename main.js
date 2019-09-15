@@ -4,7 +4,7 @@ import 'core-js';
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
 import Human from './Human';
 
-const name = "Sale";
+const name = "Kekkonen";
 const age = 34;
 
 // Shorthand objects

@@ -28,7 +28,7 @@ var myObj = {
 };
 myObj.myMethod();
 
-console.log(myObj.arrowFunc());
+console.log(myObj.arrowFunc(5)); // 10
 
 
 (

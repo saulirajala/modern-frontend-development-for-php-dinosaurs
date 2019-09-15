@@ -40,7 +40,7 @@ Nyt mennään modernin JavaSriptin muotisanoihin eli niihin yleisiin termeihin, 
 - Eli sama engine mikä tulkitsee JS-koodia, tulkitsee sitä myös nodessa
 - keino suorittaa JS-koodia palvelimella (ei selaimessa)
 - globaali objekti on nyt eri => `node node-global.js`
-- esim. `node by-value-by-reference.js` toimii kuten ko. tiedoston ajaisi selaimessa
+- esim. `node weird-objects.js` toimii kuten ko. tiedoston ajaisi selaimessa
 - ei `window`
 
 ## NPM
@@ -168,8 +168,7 @@ if (name == "Sale") {
 ### Installation and configuration
 
 1. Asenna tarvittavat npm paketit:
-`npm install --save-dev @babel/core @babel/cli @babel/preset-env webpack webpack-cli babel-loader prettier eslint eslint-config-prettier`
-`npm install core-js@3.2.1`
+`npm install core-js@3.2.1 && npm install --save-dev @babel/core @babel/cli @babel/preset-env webpack webpack-cli babel-loader prettier eslint eslint-config-prettier`
 
 2. Lisää tarvittavat konfiguraatio tiedostot
     a) `.babelrc`: kerrot Babelille mitä plugareita/presettejä sen pitää käyttää
@@ -186,6 +185,7 @@ if (name == "Sale") {
 scripts: {
     …
     "watch": "npx webpack --watch",
+    "dev": "npx webpack --mode development",
     "build": "npx webpack --mode production",
     …
 }
