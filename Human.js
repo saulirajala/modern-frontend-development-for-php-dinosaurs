@@ -12,9 +12,6 @@ class Human {
     }
 
     sayHello() {
-        // Tää ei tod.näk. toimi ellei .bind(this)
-        // Joten vois muuttaa arrow func
-
         if (this.name.includes("Kekkonen")) {
             console.log("Hello master");
             return;

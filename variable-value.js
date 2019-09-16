@@ -7,6 +7,7 @@ console.log(myVar); // Hello
 // console.log(myVar2);
 
 // How in the world can I call a function before its declared?
+// Because of hoisting
 test();
 function test() {
     var myVar3;

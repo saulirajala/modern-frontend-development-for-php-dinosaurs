@@ -168,7 +168,7 @@ if (name == "Sale") {
 ### Installation and configuration
 
 1. Asenna tarvittavat npm paketit:
-`npm install core-js@3.2.1 && npm install --save-dev @babel/core @babel/cli @babel/preset-env webpack webpack-cli babel-loader prettier eslint eslint-config-prettier`
+`npm install core-js && npm install --save-dev @babel/core @babel/cli @babel/preset-env webpack webpack-cli babel-loader prettier eslint eslint-config-prettier @wordpress/eslint-plugin`
 
 2. Lisää tarvittavat konfiguraatio tiedostot
     a) `.babelrc`: kerrot Babelille mitä plugareita/presettejä sen pitää käyttää
@@ -197,6 +197,7 @@ scripts: {
 
 `npx`-komennolla voi suorittaa suoraan npm pakettien binääritiedostoja. Mitä ne binääritiedostot on?
     - node_modules/.bin kansiossa olevat npm paketit
+    - `node node_modules/.bin/browserslist`
     - `npx babel variable-value.js` => const/let muuttuu var
     - `npx babel Human.js` => class muuttuu funktioksi, mutta includes() ei tehdä mitään
 

@@ -18,7 +18,7 @@ console.log(greet.anotherName); // Sale
 greet('Jyväskylä WordPress meetup'); // Hello Sale
 
 var superGreet = function (func, name) {
-    greet.anotherName = name;
+    func.anotherName = name;
     func(); // Hello John Doe
 }
 superGreet(greet, 'John Doe');
