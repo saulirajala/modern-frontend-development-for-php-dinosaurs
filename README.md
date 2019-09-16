@@ -2,6 +2,7 @@
 
 Jyväskylä WordPress Meetup 17.9.19
 
+Esitys: [https://docs.google.com/presentation/d/1iHMioLLb3Xr1LG48NQcroD9HdByAw7WtBuiKC-Xnf4k/edit?usp=sharing](https://docs.google.com/presentation/d/1iHMioLLb3Xr1LG48NQcroD9HdByAw7WtBuiKC-Xnf4k/edit?usp=sharing)
 
 # 1. You don't know JavaScript
 - Moderni JS on edelleen JS:ää päivän päätteeksi
