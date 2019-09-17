@@ -214,3 +214,11 @@ npx eslint functions.js
 6. Integroi prettier ja eslint osaksi koodieditoria ja/tai buildaus prosessia
     - esim. meillä Valulla buildauksen yhteydessä ajetaan sekä prettier että eslint tarkistukset ja jos failaa => ei mee tuotantoon
     - Koodieditoriin olen asettanut, että prettier ajetaan aina kun tallennan js-koodia ja editori tekee eslint tarkistuksia on-the-fly
+
+
+# Bonus
+https://twitter.com/MrAhmadAwais/status/1173598977830338560
+````js
+const shuffle = array => array.sort(()=> 0.5 - Math.random());
+export default shuffle;
+```
