@@ -53,7 +53,7 @@ Nyt mennään modernin JavaSriptin muotisanoihin eli niihin yleisiin termeihin, 
 - esimerkkejä kirjastoista: jQuery, React, underscore, gulp, webpack
 - asentuu tietokoneelle node.js:n mukana
 - lisää komentoriville `npm` komennon
-- `npx`: voi suorittaa suoraan npm pakettien binääritiedostoja => palataan babelissa tähän
+- `npx`: voi suorittaa suoraan npm pakettien binääritiedostoja => palataan babelissa tähän
 - luodaan uusi npm projekti `npm init --yes` => syntyy package.json
 
 ## package.json
@@ -169,10 +169,11 @@ if (name == "Sale") {
 ### Installation and configuration
 
 1. Asenna tarvittavat npm paketit:
-`npm install core-js && npm install --save-dev @babel/core @babel/cli @babel/preset-env webpack webpack-cli babel-loader prettier eslint eslint-config-prettier @wordpress/eslint-plugin`
+`npm install core-js && npm install --save-dev @babel/core @babel/cli @babel/preset-env webpack webpack-cli babel-loader prettier eslint eslint-config-prettier @wordpress/eslint-plugin`
 
 2. Lisää tarvittavat konfiguraatio tiedostot
-    a) `.babelrc`: kerrot Babelille mitä plugareita/presettejä sen pitää käyttää
+
+    a) `.babelrc`: kerrot Babelille mitä plugareita/presettejä sen pitää käyttää
 
     b) `webpack.config.js`: kerrot webpackille mitä sen pitää tehdä
 
@@ -193,10 +194,10 @@ scripts: {
 "browserslist": "last 2 version, not dead",
 ```
 
-- browserslists on JS-kirjasto, mitä Babel käyttää
+- browserslists on JS-kirjasto, mitä Babel käyttää
     - `npx browserslist` komennolla näet mitä selaimia yo. määritykseen kuuluu
 
-`npx`-komennolla voi suorittaa suoraan npm pakettien binääritiedostoja. Mitä ne binääritiedostot on?
+`npx`-komennolla voi suorittaa suoraan npm pakettien binääritiedostoja. Mitä ne binääritiedostot on?
     - node_modules/.bin kansiossa olevat npm paketit
     - `node node_modules/.bin/browserslist`
     - `npx babel variable-value.js` => const/let muuttuu var
@@ -205,13 +206,28 @@ scripts: {
 4. importtaa core-js projektiin (polyfill)
 `import "core-js";`
 
-5. Testaa prettier ja eslint
+5. Aja webpack:
+```bash
+# Käynnistää webpackin watch moodissa eli
+# watchaa js-filujen muutoksia ja pyöräyttää webpackin läpi, jos jotain muuttuu
+npm run watch
+
+# Pyöräyttää webpackin läpi siten, että mode on development
+npm run dev
+
+# Pyöräyttää webpackin läpi siten, että mode on production
+# Eli js-koodiin tehdään tiettyjä optimointeja (mm. minifointi)
+npm run build
 ```
+
+
+6. Testaa prettier ja eslint
+```bash
 npx prettier --check "./*.js"
 npx eslint functions.js
 ```
 
-6. Integroi prettier ja eslint osaksi koodieditoria ja/tai buildaus prosessia
+7. Integroi prettier ja eslint osaksi koodieditoria ja/tai buildaus prosessia
     - esim. meillä Valulla buildauksen yhteydessä ajetaan sekä prettier että eslint tarkistukset ja jos failaa => ei mee tuotantoon
     - Koodieditoriin olen asettanut, että prettier ajetaan aina kun tallennan js-koodia ja editori tekee eslint tarkistuksia on-the-fly
 
