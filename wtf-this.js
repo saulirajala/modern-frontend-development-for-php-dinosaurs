@@ -23,7 +23,7 @@ var myObj = {
         foo();
     },
     // arrow function with just return
-    // or even (x) => x + 5
+    // or even x => x + 5
     arrowFunc: (x) => { return x + 5 },
 };
 myObj.myMethod();

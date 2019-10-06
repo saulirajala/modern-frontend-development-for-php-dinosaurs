@@ -1,6 +1,6 @@
 // Will output undefined
 console.log(myVar);
-var myVar = "Hello"
+var myVar = "Hello";
 console.log(myVar); // Hello
 
 // Will output error: myVar2 is not defined
