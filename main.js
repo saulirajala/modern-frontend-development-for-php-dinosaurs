@@ -12,7 +12,7 @@ const age = 34;
 const saleSettings = {
     name,
     age
-}
+};
 
 // // Old way
 // const saleSettings = {
@@ -21,7 +21,7 @@ const saleSettings = {
 // }
 
 
-const Sale = new Human(saleSettings)
+const Sale = new Human(saleSettings);
 Sale.sayHello();
 
 // Destructuring

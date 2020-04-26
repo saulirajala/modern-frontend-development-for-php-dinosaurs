@@ -20,7 +20,7 @@ class Human {
         // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
         console.log(`Hello! My name is ${this.name} and I'm ${this.age} year old`);
         // // Old way
-        // console.log('Hello! My name is' + this.name + ' and I\'m ' + this.age + 'year old`);
+        // console.log('Hello! My name is' + this.name + ' and I\'m ' + this.age + 'year old');
     }
 }
 

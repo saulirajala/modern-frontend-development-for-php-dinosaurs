@@ -13,7 +13,7 @@ var myObj = {
         // funktio metodin sisällä
         var foo = function () {
             console.log(this); // window. Tätä pidetään yleisesti JS:n bugina
-        }
+        };
 
         // Arrow function
         // var foo = () => {
@@ -26,24 +26,26 @@ var myObj = {
     // or even x => x + 5
     arrowFunc: (x) => { return x + 5 },
 };
-myObj.myMethod();
+// myObj.myMethod();
 
-console.log(myObj.arrowFunc(5)); // 10
+// console.log(myObj.arrowFunc(5)); // 10
 
 
 (
     function ($) {
-        console.log(this); // window
-        $("document").ready(function () {
-            // window.document eli jQueryn täytyy tehdä niin ready eventin callback funktio on
-            // kiinnitety objektiin, joka on sama kuin window.document
+        console.log(typeof this, this); // object, window
+        $(document).ready(function () {
+            // jQuery tekee niin, että ready eventin callback funktio
+            // kiinnitetään window.document objektiin
             // eli ollaan window.document objektin metodissa
-            console.log(this);
+            console.log(typeof this, this); // object, window.document
             $('h1').click(function () {
-                console.log(this) // h1 DOM-elementti
-                console.log($(this)) // jQuery objekti, $ on funktio, joka palauttaa jQuery objektin
-            })
-        })
+                console.log(typeof this, this); // h1 DOM-elementti (objekti)
+
+                // https://api.jquery.com/Types/#jQuery
+                console.log(typeof $(this), $(this)); // jQuery objekti, $ on funktio, joka palauttaa jQuery objektin
+            });
+        });
     }
 )(jQuery);
 
@@ -61,6 +63,7 @@ this:
 
 jQuery ja this
 ==========
+- jQueryssä ollaan lähes aina jonkin metodin sisällä
 ks. esimerkki
 
 

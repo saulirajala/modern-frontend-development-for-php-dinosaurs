@@ -6,7 +6,7 @@ var greet = function (name) {
     }
     console.log("Hello " + who + "\r\n");
 };
-greet('Jyväskylä WordPress meetup'); // Hello Jyväskylä WordPress meetup
+greet('Seinäjoki WordPress meetup'); // Hello Seinäjoki WordPress meetup
 
 /**
  * JavaScriptissä funktiot on objekteja
@@ -15,12 +15,12 @@ greet('Jyväskylä WordPress meetup'); // Hello Jyväskylä WordPress meetup
  */
 greet.anotherName = 'Sale';
 console.log(greet.anotherName); // Sale
-greet('Jyväskylä WordPress meetup'); // Hello Sale
+greet('Seinäjoki WordPress meetup'); // Hello Sale
 
 var superGreet = function (func, name) {
     func.anotherName = name;
     func(); // Hello John Doe
-}
+};
 superGreet(greet, 'John Doe');
 
 /**
@@ -49,7 +49,7 @@ console.log(newAge); //12
 var sauli = {
     name: "Sauli",
     age: 34
-}
+};
 
 var scamSauli = sauli;
 scamSauli.age = 25; // Oops, this will also change sauli.age to 25!

@@ -93,7 +93,7 @@ Nyt mennään modernin JavaSriptin muotisanoihin eli niihin yleisiin termeihin, 
 - arrow functions, class, let/const, template strings, spread&rest, destructuring, shorthand objects, import/export
 - arrow functions: wtf-this.js ja myObj, koska this muuttuu => ei voi vaan sokeana lähteä muuttamaan funktioita arrow funktioiksi
 - let/const: variable-value.js, koska hoistaus ja scope
-- template literals: main.js tai Human.js
+- template literals: Human.js
 - class: Human.js
 - destructuring: main.js
 - shorthand objects: main.js
