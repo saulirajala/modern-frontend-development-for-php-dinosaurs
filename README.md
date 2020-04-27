@@ -236,7 +236,7 @@ npx eslint functions.js
 
 # Bonus
 https://twitter.com/MrAhmadAwais/status/1173598977830338560
-````js
+```js
 // What is happening here?
 const shuffle = array => array.sort(()=> 0.5 - Math.random());
 export default shuffle;
