@@ -2,6 +2,8 @@
 
 Jyväskylä WordPress Meetup 17.9.19
 
+Seinäjoki (online) WordPress Meetup 28.4.20
+
 Esitys: [https://docs.google.com/presentation/d/1iHMioLLb3Xr1LG48NQcroD9HdByAw7WtBuiKC-Xnf4k/edit?usp=sharing](https://docs.google.com/presentation/d/1iHMioLLb3Xr1LG48NQcroD9HdByAw7WtBuiKC-Xnf4k/edit?usp=sharing)
 
 # 1. You don't know JavaScript
