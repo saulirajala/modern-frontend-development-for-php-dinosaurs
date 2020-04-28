@@ -200,7 +200,8 @@ scripts: {
     - `npx browserslist` komennolla näet mitä selaimia yo. määritykseen kuuluu
 
 `npx`-komennolla voi suorittaa suoraan npm pakettien binääritiedostoja. Mitä ne binääritiedostot on?
-    - node_modules/.bin kansiossa olevat npm paketit
+    - `node_modules/.bin` kansiossa olevat npm paketit
+    - toimii myös paketeille, joita ei ole asennettu lokaalisti. Esim. `npx is-github-down`
     - `node node_modules/.bin/browserslist`
     - `npx babel variable-value.js` => const/let muuttuu var
     - `npx babel Human.js` => class muuttuu funktioksi, mutta includes() ei tehdä mitään
